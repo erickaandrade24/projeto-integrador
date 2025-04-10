@@ -1,0 +1,1 @@
+o nosso projeto integrador consiste em um aplicativo web para lojas de manutençao de celulares/notebook, a ideia vai ser um site de suporte para atender a demandas de clientes, automatizando os atendimentos de forma rapida e precisa
