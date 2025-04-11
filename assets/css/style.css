@@ -1,4 +1,132 @@
-h1{
-    color: aqua;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    background-color: #e3e8f3
+    
+}
+main{
+    padding: 20px;
+}
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffff;
+    height: 100vh;
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+   
+
+   
+    
+    
+}
+#user_img{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
    
 }
+
+#sidebar_content{
+    padding: 10px;
+}
+
+#side_itens{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+
+
+}
+
+.side-iten{
+    border: 8px;
+    padding: 20px;
+    cursor: pointer;
+   
+}
+
+.side-iten.active{
+    background-color: #4f46e5;
+    
+
+}
+
+.side-iten:hover:not(.active), #logout_uni:hover{
+    background-color: #e3e9f7;
+}
+
+
+
+
+.side-iten a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #0a0a0a;
+}
+
+.side-iten.active a {
+    color: #e3e9f7;
+   
+}
+
+.side-iten a i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+#user-loja{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#logout{
+    border-top: 1px solid #e3e9f7;
+    padding: 12px;
+}
+#logout_uni{
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+#open_uni{
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #4f46e5;
+    color: #e3e9f7;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
