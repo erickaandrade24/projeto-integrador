@@ -12,6 +12,8 @@ body{
 }
 main{
     padding: 20px;
+   
+    
 }
 
 #sidebar{
@@ -22,19 +24,28 @@ main{
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
     position: relative;
-   
+    transition: all .5s;
+    min-width: 82px;
+    
 
-   
     
     
 }
-#user_img{
+#user_loja{
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 20px;
    
 }
+#user-info{
+    display: flex;
+    flex-direction: column;
+    color: #737a88;
+    font-size: 16px;
+}
+
+
 
 #sidebar_content{
     padding: 10px;
@@ -50,7 +61,7 @@ main{
 }
 
 .side-iten{
-    border: 8px;
+    border-radius: 8px;
     padding: 20px;
     cursor: pointer;
    
@@ -73,6 +84,7 @@ main{
     text-decoration: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #0a0a0a;
 }
 
@@ -124,9 +136,37 @@ main{
     border: none;
     cursor: pointer;
 }
+#open_icon{
+    transition: transform .3s ease;
+}
 
+.open-sidebar #open_icon{
+    transform: rotate(180deg);
 
+}
 
+.item-descricao{
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .6s;
 
+    
+}
+
+#sidebar.open-sidebar{
+    min-width:15%;
+}
+
+#sidebar.open-sidebar .item-descricao{
+    width: 180px;
+    height: auto;
+}
+#sidebar.open-sidebar .side-iten a{
+    justify-content: flex-start;
+    gap: 14px;
+}
 
 
