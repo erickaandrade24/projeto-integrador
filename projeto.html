@@ -25,7 +25,7 @@
             </div>
 
             <ul id="side_itens">
-                <li class="side-iten active">
+                <li class="side-iten active" onclick="mostrarTela('chamados')">
                     <a href="#">
                         <i class="fa-solid fa-chart-bar"></i>
                         <span class="item-descricao">
@@ -80,22 +80,45 @@
     </nav>
 
     <main>
-       
+    <section id="tela-chamados" class="chamados" >
     <div class="tera-board">
         <div class="coluna">
             <h2 class="titulo-coluna-amar">em aberto</h2>
-            <div class="tera-card">
+            <div class="tera-card-medium">
                 <h3>chamados em aberto</h3>
                 <p><strong>nome</strong></p>
                 <p><strong>contato</strong></p>
                 <p><strong>produto</strong></p>
             </div>
         </div>
-    </div>
+    
   
+   <div class="coluna">
+    <h2 class="coluna-titulo-verm">resolvendo</h2>
+    <div class="tera-board-alto">
+        <h3>suporte requisitado</h3>
+        <p><strong>cliente:</strong> rosa</p>
+        <p><strong>telefone:</strong>(13)0220</p>
+        <p><strong>email</strong> rosa</p>
+    </div>
+   </div>
 
+   <div class="coluna">
+    <h2 class="coluna-titulo-verde">resolvidos</h2>
+   <div class="tera-card-baixo">
+    <h3>encerrados</h3>
+    <p><strong>cliente</strong> cindra</p>
+    <p><strong>telefone</strong> 999089</p>
+    <p><strong>email</strong> erickazl@</p>
+   </div>
    
+ </div>
+</div>
+
+</section>
+
     </main>
  <script src="assets/javascript/script.js"></script>
+
 </body>
 </html>

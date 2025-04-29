@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+   
 }
 body{
     display: flex;
@@ -223,6 +223,10 @@ main{
     cursor: pointer;
 }
 
+
+ /* acabou a borda */
+
+
 .tera-board{
     display: flex;
     gap: 20px;
@@ -239,26 +243,52 @@ main{
 
 }
 .titulo-coluna-amar{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #ebecf0;
     margin: 0 0 15px 0;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding-bottom: 5px;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 4px solid #ccc;
     border-color: yellow;
 }
-.coluna{
-    background-color: #f0f0f1;
-    border-radius: 8px;
-    padding: 15px;
-    width: 250px;
-    flex-shrink: 0;
-}
+
 
 .tera-card{
     background-color: white;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0,1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 
 }
+
+.tera-card h3{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.coluna-titulo-verm{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ebecf0;
+    margin: 0 0 15px 0;
+    font-size: 1.6rem;
+    padding-bottom: 5px;
+    border-bottom: 4px solid rgb(235, 8, 8);
+
+}
+
+.coluna-titulo-verde{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ebecf0;
+    margin: 0 0 15px 0;
+    font-size: 1.6rem;
+    padding-bottom: 5px;
+    border-bottom: 4px solid rgb(36, 240, 53);
+}
+
+.tela{
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
