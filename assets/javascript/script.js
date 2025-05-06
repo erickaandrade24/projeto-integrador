@@ -1,14 +1,47 @@
-document.getElementById('open_uni').addEventListener('click', function () {
-    document.getElementById('sidebar').classList.toggle('open-sidebar');
+const sidebar = document.getElementById('sidebar');
+const openButton = document.getElementById('open_uni');
 
-
-});
-
-function mostrarTela(){
-   const secoes =  document.querySelectorAll('main section').forEach(secao =>{secao.style.display= 'none'});
-
-   const ativa = document.getElementById('tela-' +id);
-   if(ativa) ativa.style.display = 'block';
-   
+if (openButton) {
+    openButton.addEventListener('click', () => {
+        sidebar.classList.toggle('open-sidebar');
+    });
 }
 
+
+
+
+
+
+
+
+
+
+
+
+function mostrarTela(telaId){
+    const telas = document.querySelectorAll('.tela-conteudo');
+    telas.forEach(tela => {
+        tela.classList.remove('active');
+    });
+
+
+const menuItens = document.querySelectorAll('#side_itens .side-iten');
+menuItens.forEach(item => {
+    item.classList.remove('active');
+});
+
+const telaSelecionada = document.getElementById(telaId);
+if(telaSelecionada) {
+    telaSelecionada.classList.add('active');
+
+const menuItemAtivo = document.querySelector(`#side_itens .side-iten[onclick = "mostrarTela('${telaId}')"]`);
+if(menuItemAtivo) {
+    menuItemAtivo.classList.add('active');
+     }
+  }
+}
+
+ 
+document.addEventListener('DOMContentLoaded', () =>{
+    mostrarTela('tela-chamados');
+ });
